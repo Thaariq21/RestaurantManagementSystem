@@ -10,5 +10,6 @@ package restaurant.management.system;
  * @author ahmad nur hidaya
  */
 public class NewClass {
+    String menu;
     
 }
