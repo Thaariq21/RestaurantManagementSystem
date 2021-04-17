@@ -9,7 +9,12 @@ package restaurant.management.system;
  *
  * @author ahmad nur hidaya
  */
-public class NewClass {
-    String menu;
+public class Item {
+    private String namaMakanan;
+    private double harga;
     
+    public Item(String namaMakanan, double harga){
+        this.namaMakanan = namaMakanan;
+        this.harga = harga;
+    }
 }
