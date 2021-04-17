@@ -18,11 +18,25 @@ public class Menu {
     public Menu(){
         generateMenu();
     }
-    public void generateMenu(){
+
+    public void showMenu() {
+        System.out.println("=========== MENU ===========");
+        System.out.println("Makanan");
+        //    System.out.println("----------------------------");
+        for (int i = 0; i < 5; i++) {
+            System.out.println((i + 1) + ". " + item[i].getNamaItem() + " " + item[i].getHarga());
+        }
+    }
+
+    public void generateMenu() {
         item[0] = new Item("Nasi kuning", (double) 15000);
         item[1] = new Item("Nasi Goreng", (double) 15000);
         item[2] = new Item("Mie Ayam", (double) 13000);
         item[3] = new Item("Bakso", (double) 10000);
         item[4] = new Item("Nasi Campur", (double) 20000);
     }
+    
+    
+    
+    
 }

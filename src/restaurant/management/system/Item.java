@@ -10,11 +10,19 @@ package restaurant.management.system;
  * @author ahmad nur hidaya
  */
 public class Item {
-    private String namaMakanan;
+    private String namaItem;
     private double harga;
     
-    public Item(String namaMakanan, double harga){
-        this.namaMakanan = namaMakanan;
+    Item ite[] = new Item[5];
+    
+    public Item(String namaItem, double harga){
+        this.namaItem = namaItem;
         this.harga = harga;
+    }
+    public String getNamaItem(){
+        return namaItem;
+    }
+    public double getHarga(){
+        return harga;
     }
 }
