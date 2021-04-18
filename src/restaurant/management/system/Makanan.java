@@ -9,22 +9,19 @@ package restaurant.management.system;
  *
  * @author ahmad nur hidaya
  */
-public class Minuman extends Item{
+public class Makanan extends Item{
     
-
-    public Minuman(String namaItem, double harga) {
+    public Makanan(String namaItem, double harga) {
         super(namaItem, harga);
     }
     
     @Override
-    public void showMenu() {
-       // System.out.println("=========== MENU ===========");
-        System.out.println("Minuman");
+    public void showMenu(){
+        System.out.println("=========== MENU ===========");
+        System.out.println("Makanan");
         //    System.out.println("----------------------------");
         for (int i = 0; i < 5; i++) {
-           System.out.println((i + 1) + ". " + itemMinum[i].getNamaItem() + " " + itemMinum[i].getHarga());
+           System.out.println((i + 1) + ". " + itemMakan[i].getNamaItem() + " " + itemMakan[i].getHarga());
         }
     }
-    
-    
 }

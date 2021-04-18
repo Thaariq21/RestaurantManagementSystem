@@ -34,6 +34,14 @@ public class Item {
         itemMinum[4] = new Item("Chocholate",(double) 15000);
     }
     public void generateMenuMak(){
-        
+        itemMakan[0] = new Item("Ayam Goreng",(double) 20000);
+        itemMakan[1] = new Item("Nasi Goreng",(double) 15000);
+        itemMakan[2] = new Item("Mie Ayam",(double) 10000);
+        itemMakan[3] = new Item("Bakso Super",(double) 20000);
+        itemMakan[4] = new Item("Lobster Kriuk-kriuk",(double) 25000);
+    }
+    public void showMenu(){
+        //minuman.showMenu();
+        //makanan.showMenu();
     }
 }
