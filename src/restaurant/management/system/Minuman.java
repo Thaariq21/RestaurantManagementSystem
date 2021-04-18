@@ -9,17 +9,21 @@ package restaurant.management.system;
  *
  * @author ahmad nur hidaya
  */
-public class Minuman{
-    Item item[] = new Item[5];
+public class Minuman extends Item{
     
+
+    public Minuman(String namaItem, double harga) {
+        super(namaItem, harga);
+    }
     
-    public void showMenu(){
+    public void showMenu() {
         System.out.println("=========== MENU ===========");
         System.out.println("Minuman");
-    //    System.out.println("----------------------------");
-        for(int i = 0;i < 5; i++){
-            System.out.println((i+1)+". "+item[i].getNamaItem()+" "+item[i].getHarga());
+        //    System.out.println("----------------------------");
+        for (int i = 0; i < 5; i++) {
+           System.out.println((i + 1) + ". " + itemMinum[i].getNamaItem() + " " + itemMinum[i].getHarga());
         }
     }
+    
     
 }
